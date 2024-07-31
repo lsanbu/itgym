@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Gym</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-left">
+                <img src="ITGymnewlogo.png" alt="ITGym Logo" class="header-logo">
+                <img src="ITGymSeal_v0.png" alt="ITGym Seal" class="header-seal">
+            </div>
+            <div class="header-center">
+                <h1>Welcome to IT Gym</h1>
+                <p class="tagline"><b>The Resource Centre for IT UpSkilling</b></p>
+            </div>
+            <div class="header-right">
+                <div class="additional-text">
+                    <p>Overall Score in ITGym: </p>
+                    <p>LeetCode Score: </p>
+                    <p>LinkedIn Score: </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="nav-left">
+            <div class="radio-buttons">
+                <input type="radio" id="students" name="group" value="Students" checked>
+                <label for="students">Students</label>
+                
+                <input type="radio" id="employees" name="group" value="Employees">
+                <label for="employees">Employees</label>
+                
+                <input type="radio" id="employers" name="group" value="Employers">
+                <label for="employers">Employers</label>
+            </div>
+        </div>
+        <div class="nav-right">
+            <button class="nav-button" id="login">Login</button>
+            <button class="nav-button" id="signup">Sign-Up</button>
+        </div>
+    </nav>
+    <div class="main-container">
+        <aside class="menu">
+            <section id="skills" class="category-section">
+                <h2>Skills</h2>
+                <ul>
+                    <li><input type="checkbox" id="tech-skills" onclick="loadContent('https://www.youtube.com/embed/n8yY_yirKmk?si=ZxziuQoRUTLNcHMz')"><label for="tech-skills">Tech Skills</label></li>
+                    <li><input type="checkbox" id="soft-skills" onclick="loadContent('https://www.youtube.com/embed/gOPohT1nT4k?si=bNk25yQr2LDZA2Ey')"><label for="soft-skills">Soft Skills</label></li>
+                    <li><input type="checkbox" id="domain-skills" onclick="loadContent('domain-skills')"><label for="domain-skills">Domain Skills</label></li>
+                    <li><input type="checkbox" id="life-skills" onclick="loadContent('https://www.youtube.com/embed/EATspFemiLE?si=Oadcis4mJkRNmdC')"><label for="life-skills">Life Skills</label></li>
+                </ul>
+            </section>
+            <section id="clubs" class="category-section">
+                <h2>Clubs</h2>
+                <ul>
+                    <li><input type="checkbox" id="coding-club" onclick="loadContent('coding-club')"><label for="coding-club">Coding Club</label></li>
+                    <li><input type="checkbox" id="data-club" onclick="loadContent('data-club')"><label for="data-club">Data Club</label></li>
+                    <li><input type="checkbox" id="ai-club" onclick="loadContent('ai-club')"><label for="ai-club">AI Club</label></li>
+                    <li><input type="checkbox" id="design-club" onclick="loadContent('design-club')"><label for="design-club">Design Club</label></li>
+                    <li><input type="checkbox" id="tech-writing" onclick="loadContent('tech-writing')"><label for="tech-writing">Tech Writing</label></li>
+                    <li><input type="checkbox" id="placement" onclick="loadContent('placement')"><label for="placement">Placement</label></li>
+                    <li><input type="checkbox" id="personal-growth" onclick="loadContent('personal-growth')"><label for="personal-growth">Personal Growth</label></li>
+                    <li><input type="checkbox" id="higher-studies" onclick="loadContent('higher-studies')"><label for="higher-studies">Higher Studies</label></li>
+                    <li><input type="checkbox" id="digital-marketing" onclick="loadContent('digital-marketing')"><label for="digital-marketing">Digital Marketing</label></li>
+                </ul>
+            </section>
+            <section id="resources" class="category-section">
+                <h2>Resources</h2>
+                <ul>
+                    <li><input type="checkbox" id="interviews" onclick="loadContent('interviews')"><label for="interviews">Interviews</label></li>
+                    <li><input type="checkbox" id="tech-roadmap" onclick="loadContent('tech-roadmap')"><label for="tech-roadmap">Tech Roadmap</label></li>
+                    <li><input type="checkbox" id="role-roadmap" onclick="loadContent('role-roadmap')"><label for="role-roadmap">Role Roadmap</label></li>
+                    <li><input type="checkbox" id="domain-roadmap" onclick="loadContent('domain-roadmap')"><label for="domain-roadmap">Domain Roadmap</label></li>
+                    <li><input type="checkbox" id="certification-platforms" onclick="loadContent('certification-platforms')"><label for="certification-platforms">Certification Platforms</label></li>
+                    <li><input type="checkbox" id="online-learning-platforms" onclick="loadContent('online-learning-platforms')"><label for="online-learning-platforms">Online Learning Platforms</label></li>
+                    <li><input type="checkbox" id="coding-sites" onclick="loadContent('coding-sites')"><label for="coding-sites">Coding Sites</label></li>
+                    <li><input type="checkbox" id="code-practice-platforms" onclick="loadContent('code-practice-platforms')"><label for="code-practice-platforms">Code Practice Platforms</label></li>
+                    <li><input type="checkbox" id="placement-courses" onclick="loadContent('placement-courses')"><label for="placement-courses">Placement Guaranteed Courses</label></li>
+                </ul>
+            </section>
+            <section id="social-media" class="category-section">
+                <h2>Other Social Media Resources</h2>
+                <ul>
+                    <li><input type="checkbox" id="youtube-profile" onclick="loadContent('youtube-profile')"><label for="youtube-profile">YouTube Profile</label></li>
+                    <li><input type="checkbox" id="insta-profile" onclick="loadContent('insta-profile')"><label for="insta-profile">Instagram Profile</label></li>
+                    <li><input type="checkbox" id="linkedin-profile" onclick="loadContent('linkedin-profile')"><label for="linkedin-profile">LinkedIn Profile</label></li>
+                    <li><input type="checkbox" id="fb-profile" onclick="loadContent('fb-profile')"><label for="fb-profile">Facebook Profile</label></li>
+                    <li><input type="checkbox" id="youtube-post" onclick="loadContent('youtube-post')"><label for="youtube-post">YouTube Post</label></li>
+                    <li><input type="checkbox" id="insta-post" onclick="loadContent('insta-post')"><label for="insta-post">Instagram Post</label></li>
+                    <li><input type="checkbox" id="linkedin-post" onclick="loadContent('linkedin-post')"><label for="linkedin-post">LinkedIn Post</label></li>
+                    <li><input type="checkbox" id="fb-post" onclick="loadContent('fb-post')"><label for="fb-post">Facebook Post</label></li>
+                    <li><input type="checkbox" id="telegram-page" onclick="loadContent('telegram-page')"><label for="telegram-page">Telegram Page</label></li>
+                    <li><input type="checkbox" id="whatsapp-group" onclick="loadContent('whatsapp-group')"><label for="whatsapp-group">WhatsApp Group</label></li>
+                </ul>
+            </section>
+        </aside>
+        <div class="content-frame">
+            <iframe id="content-frame" src="" frameborder="0"></iframe>
+        </div>
+    </div>
+    <footer>
+        <input type="text" class="search-input" placeholder="Search...">
+    </footer>
+
+    <script>
+        function loadContent(url) {
+            document.getElementById('content-frame').src = url;
+        }
+    </script>
+</body>
+</html>
